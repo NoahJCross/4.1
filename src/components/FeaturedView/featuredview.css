@@ -13,6 +13,7 @@
 .app__featuredview-cards {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   max-width: 1000px;
   width: 100%;
 }
@@ -27,4 +28,11 @@
 
 .app__featuredview > button:hover {
   background-color: var(--primary-hover);
+}
+
+@media screen and (max-width: 650px) {
+  .app__featuredview-cards {
+    align-items: center;
+    flex-direction: column;
+  }
 }
