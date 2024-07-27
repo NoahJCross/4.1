@@ -8,15 +8,17 @@ const Card = ({ card }) => {
       <div className="app__card-body">
         <h3>{card.headline}</h3>
         <p className="app__card-desc text-desc">{card.abstract}</p>
-        <hr />
-        <div className="app__card-container">
-          <div className="app__card-stars">
-            <IoMdStar size={24} color="gold" />
-            <p>{card.stars}</p>
+        <div className="app__card-footer">
+          <hr />
+          <div className="app__card-container">
+            <div className="app__card-stars">
+              <IoMdStar size={24} color="gold" />
+              <p>{card.stars}</p>
+            </div>
+            <p>
+              <strong>{card.author}</strong>
+            </p>
           </div>
-          <p>
-            <strong>{card.author}</strong>
-          </p>
         </div>
       </div>
     </div>

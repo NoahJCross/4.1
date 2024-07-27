@@ -1,4 +1,6 @@
 .app__card {
+  display: flex;
+  flex-direction: column;
   max-width: 300px;
   width: 100%;
   border: 2px solid var(--offwhite-color);
@@ -12,6 +14,10 @@
 }
 
 .app__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 0.5rem;
 }
 
